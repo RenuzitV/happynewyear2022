@@ -33,7 +33,7 @@
       position: absolute;
       top: 50%;
       opacity: 0;
-      animation: vem_feliz 2s ease-in-out 7s forwards;
+      animation: vem_feliz 2s ease-in-out 7s forwards, ending2kf 2s ease-in-out 11s forwards;
     }
 
     .ano_novo {
@@ -316,7 +316,6 @@
 
       100% {
         margin-top: -200px;
-        ;
         opacity: 1;
       }
     }
@@ -370,12 +369,48 @@
         opacity: 1;
       }
     }
+
+    @keyframes endingkf {
+      0% {
+        margin-top: 0px;
+        opacity: 0;
+      }
+
+      100% {
+        margin-top: -200px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes ending2kf{
+      100% {
+        margin-top: -100%;
+      }
+    }
+
+    .ending{
+      width: 100%;
+      font-family: 'Pacifico';
+      font-size: 70px;
+      font-weight: 700;
+      color: #f48fb1;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      opacity: 0;
+      animation: endingkf 2s ease-in-out 12s forwards;
+    }
+
+    .ending2{
+      animation: ending2kf 2s ease-in-out 11s forwards
+    }
+
   </style>
 </head>
 
 <body>
   <div class="feliz">Happy new year</div>
-  <div class="ano_novo">
+  <div class="ano_novo ending2">
     <span>202</span>
     <span class="seis">1</span>
     <span class="sete">2</span>
@@ -402,6 +437,11 @@
       <span><i></i></span>
       <span><i></i></span>
     </div>
+  </div>
+  <div class="ending">
+    <p>Chúc Hà không chỉ sinh nhật vui vẻ</p>
+    <div> mà mỗi ngày sau đều vui vẻ</div>
+  <div class="ending"> 
   </div>
 </body>
 
