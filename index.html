@@ -59,7 +59,7 @@
 
     span.seis {
       position: absolute;
-      top: 49%;
+      top: 50%;
       right: 50%;
       margin-right: -10.5vmax;
       animation: vai_2016 5s ease-in-out 5s forwards;
@@ -68,11 +68,11 @@
     span.sete {
       position: absolute;
       right: 0%;
-      margin-right: -200px;
+      margin-right: -10rem;
       animation: vem_2017 6s ease-in-out forwards;
     }
 
-    span.sete:before {
+    /* span.sete:before {
       content: '';
       width: 0px;
       height: 6px;
@@ -82,11 +82,11 @@
       transform: rotate(0deg);
       transform-origin: left top;
       position: absolute;
-      top: 55px;
-      left: 10px;
+      top: 3vmax;
+      left: 2vmax;
       z-index: -1;
       animation: entrega_balao 1s ease-in-out 4s;
-    }
+    } */
 
     .balao {
       width: 100px;
@@ -96,7 +96,7 @@
       border-radius: 50%;
       position: absolute;
       top: 50%;
-      margin-top: -165px;
+      margin-top: -16vh;
       right: 0%;
       margin-right: -200px;
       animation: vem_e_vai_balao 10s ease-in-out forwards;
@@ -251,17 +251,17 @@
 
       66.6666% {
         right: 50%;
-        margin-right: -300px;
+        margin-right: -16vw;
       }
 
       90% {
         right: 50%;
-        margin-right: -300px;
+        margin-right: -16vw;
       }
 
       100% {
-        right: 49%;
-        margin-right: -12vmax;
+        right: 50%;
+        margin-right: -13vw;
       }
     }
 
@@ -272,12 +272,12 @@
 
       40% {
         right: 50%;
-        margin-right: -300px;
+        margin-right: -17vmax;
       }
 
       50% {
         right: 50%;
-        margin-right: -200px;
+        margin-right: -11.5vmax;
         top: 50%;
       }
 
@@ -289,6 +289,7 @@
 
     @keyframes entrega_balao {
       0% {
+        padding: 0px;
         transform: rotate(-30deg);
         width: 40px;
       }
@@ -301,7 +302,7 @@
 
     @keyframes vai_2016 {
       0% {
-        top: 49%;
+        top: 50%;
       }
 
       100% {
@@ -403,7 +404,7 @@
     }
 
     .ending2{
-      animation: ending2kf 2s ease-in-out 11s forwards
+      animation: ending2kf 2s ease-in-out 11s forwards;
     }
 
   </style>
